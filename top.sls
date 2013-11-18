@@ -11,3 +11,4 @@ base:
     - kernel-builder
     - buildslave
     - jenkins
+    - mirrors
