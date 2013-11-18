@@ -9,3 +9,4 @@ base:
     - match: pcre
     - salt-minion
     - kernel-builder
+    - buildslave
