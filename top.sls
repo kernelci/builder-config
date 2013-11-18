@@ -8,3 +8,4 @@ base:
   'vps-*':
     - match: pcre
     - salt-minion
+    - kernel-builder
