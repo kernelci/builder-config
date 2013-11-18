@@ -38,3 +38,7 @@ toolchain:
   pkg.latest:
     - name: gcc-arm-linux-gnueabi
     - refresh: True
+
+git-core:
+  pkg:
+    - latest
