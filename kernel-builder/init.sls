@@ -24,6 +24,16 @@ msmtp:
   pkg:
     - latest
 
+bc:
+  pkg:
+    - latest
+
 python-software-properties:
   pkg:
     - latest
+
+pkgrepo.managed:
+  - ppa: linaro-maintainers/toolchain
+  pkg.latest:
+    - name: gcc-arm-linux-gnueabi
+    - refresh: True
