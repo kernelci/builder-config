@@ -1,6 +1,7 @@
 # kernel mirrors
 
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
+http://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
   git.latest:
-    - target: /srv/linux.git
+    - target: /srv/mirrors/linux.git
     - mirror: True
+    - remote_name: linus
