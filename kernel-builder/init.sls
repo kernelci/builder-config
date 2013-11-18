@@ -42,3 +42,7 @@ toolchain:
 git-core:
   pkg:
     - latest
+
+htop:
+  pkg:
+    - latest
