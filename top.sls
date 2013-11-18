@@ -10,3 +10,4 @@ base:
     - salt-minion
     - kernel-builder
     - buildslave
+    - jenkins
