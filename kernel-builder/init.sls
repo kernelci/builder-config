@@ -4,6 +4,10 @@ build-essential:
   pkg:
     - latest
 
+distcc:
+  pkg:
+    - latest
+
 ccache:
   pkg:
     - latest
@@ -17,5 +21,9 @@ python:
     - latest
 
 msmtp:
+  pkg:
+    - latest
+
+python-software-properties:
   pkg:
     - latest
