@@ -12,3 +12,12 @@ base:
     - buildslave
     - jenkins
     - mirrors
+
+  # toolchain builders
+  'tcwgbuild*':
+    - match: pcre
+    - salt-minion
+    - kernel-builder
+    - buildslave
+    - jenkins
+    - mirrors
