@@ -7,7 +7,7 @@ git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
 # deploy mirror update script
 /srv/mirrors/update_mirror.sh:
   file.managed:
-    - source: salt:update_mirrors.sh
+    - source: salt:update_mirror.sh
     - user: root
     - group: root
     - mode: 644
