@@ -10,7 +10,7 @@ git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
     - source: salt://mirrors/update_mirror.sh
     - user: root
     - group: root
-    - mode: 644
+    - mode: 755
 
 # cron job for kernel mirrors
 /srv/mirrors/update_mirror.sh /srv/mirrors/linux.git:
