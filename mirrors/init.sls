@@ -19,10 +19,12 @@ git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
     - minute: 20
 
 # remotes
-add_remotes:
+next:
   cmd.run:
     - name: "cd /srv/mirrors/linux.git && git remote add --no-tags next http://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep next"
+
+arm-soc:
   cmd.run:
     - name: "cd /srv/mirrors/linux.git && git remote add --no-tags arm-soc http://git.kernel.org/pub/scm/linux/kernel/git/arm/arm-soc.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep arm-soc"
