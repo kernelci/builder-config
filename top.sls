@@ -5,7 +5,7 @@ base:
     - salt-master
 
   # vps kernel builders
-  'vps-*':
+  'kbuilder*':
     - match: pcre
     - salt-minion
     - kernel-builder
