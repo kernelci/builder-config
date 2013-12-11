@@ -8,6 +8,10 @@ distcc:
   pkg:
     - latest
 
+distcc-pump:
+  pkg:
+    - latest
+
 ccache:
   pkg:
     - latest
