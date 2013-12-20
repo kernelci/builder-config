@@ -1,5 +1,6 @@
 #!/bin/bash
 # usage ./update_mirror.sh <path_to_mirror>
+exit > /dev/null
 cd $1
 git remote update
 git remote prune next
