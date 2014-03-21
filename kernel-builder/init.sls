@@ -43,6 +43,13 @@ toolchain:
     - name: gcc-arm-linux-gnueabi
     - refresh: True
 
+toolchain:
+  pkgrepo.managed:
+    - ppa: linaro-maintainers/toolchain
+  pkg.latest:
+    - name: gcc-aarch64-linux-gnu
+    - refresh: True
+
 git-core:
   pkg:
     - latest
