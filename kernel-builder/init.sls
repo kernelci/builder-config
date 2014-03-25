@@ -46,7 +46,7 @@ toolchain:
 gcc-linaro-aarch64-linux-gnu:
   archive:
     - extracted
-    - name: /usr
+    - name: /usr/
     - source: http://releases.linaro.org/latest/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.8-2014.02_linux.tar.xz
     - source_hash: md5=6737ae448ffb8732885eb7d10db119ee
     - tar_options: J
