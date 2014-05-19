@@ -28,3 +28,8 @@ arm-soc:
   cmd.run:
     - name: "cd /srv/mirrors/linux.git && git remote add --no-tags arm-soc http://git.kernel.org/pub/scm/linux/kernel/git/arm/arm-soc.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep arm-soc"
+
+lsk:
+  cmd.run:
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags lsk git://git.linaro.org/kernel/linux-linaro-stable.git"
+    - unless: "cd /srv/mirrors/linux.git && git remote | grep lsk"
