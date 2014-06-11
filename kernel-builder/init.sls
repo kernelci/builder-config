@@ -8,6 +8,10 @@ build-essential:
   pkg:
     - latest
 
+curl:
+  pkg:
+    - latest
+
 distcc:
   pkg:
     - latest
