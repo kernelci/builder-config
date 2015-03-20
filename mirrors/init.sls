@@ -33,3 +33,8 @@ lsk:
   cmd.run:
     - name: "cd /srv/mirrors/linux.git && git remote add --no-tags lsk git://git.linaro.org/kernel/linux-linaro-stable.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep lsk"
+
+rmk:
+  cmd.run:
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags rmk git://ftp.arm.linux.org.uk/pub/linux/arm/kernel/git-cur/linux-arm.git"
+    - unless: "cd /srv/mirrors/linux.git && git remote | grep rmk"
