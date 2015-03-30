@@ -1,5 +1,9 @@
 # kernel builder packages
 
+unzip:
+  pkg:
+    - latest
+
 ia32-libs:
   pkg:
     - latest
