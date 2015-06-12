@@ -16,10 +16,6 @@ software-properties-common:
   pkg:
     - latest
 
-add_linaro_toolchain_ppa:
-  cmd.run:
-    - name: add-apt-repository -y ppa:linaro-maintainers/toolchain && apt-get update
-
 libstdc++6:i386:
  pkg:
    - latest
