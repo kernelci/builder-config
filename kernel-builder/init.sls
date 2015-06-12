@@ -8,6 +8,22 @@ add_i386_architecture:
   cmd.run:
     - name: dpkg --add-architecture i386
 
+libstdc++6:i386:
+ pkg:
+   - latest
+
+libgcc1:i386:
+ pkg:
+   - latest
+
+zlib1g:i386:
+ pkg:
+   - latest
+
+libncurses5:i386:
+  pkg:
+    - latest
+
 build-essential:
   pkg:
     - latest
@@ -56,9 +72,12 @@ python-software-properties:
   pkg:
     - latest
 
-gcc-arm-linux-gnueabi:
-  pkg:
-    - latest
+toolchain:
+  pkgrepo.managed:
+    - ppa: linaro-maintainers/toolchain
+  pkg.latest:
+    - name: gcc-arm-linux-gnueabi
+    - refresh: True
 
 gcc-linaro-aarch64-linux-gnu:
   archive:
