@@ -1,3 +1,3 @@
-openjdk-6-jre-headless:
+openjdk-7-jre-headless:
   pkg:
     - latest
