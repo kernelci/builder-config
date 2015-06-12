@@ -65,7 +65,7 @@ gcc-linaro-aarch64-linux-gnu:
     - extracted
     - name: /usr/
     - source: http://releases.linaro.org/14.04/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.8-2014.04_linux.tar.xz
-    - source_hash: md5=2086d92dcaccf05a454c836f01c3fc5
+    - source_hash: md5=2086d92dcaccf05a454c836f01c3fc5f
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/aarch64-linux-gnu/
