@@ -8,14 +8,6 @@ add_i386_architecture:
   cmd.run:
     - name: dpkg --add-architecture i386
 
-python-software-properties:
-  pkg:
-    - latest
-
-software-properties-common:
-  pkg:
-    - latest
-
 libstdc++6:i386:
  pkg:
    - latest
@@ -81,8 +73,7 @@ gcc-arm-linux-gnueabi:
     - latest
 
 gcc-linaro-aarch64-linux-gnu:
-  archive:
-    - extracted
+  archive.extracted:
     - name: /usr/
     - source: http://releases.linaro.org/14.04/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.8-2014.04_linux.tar.xz
     - source_hash: md5=2086d92dcaccf05a454c836f01c3fc5f
