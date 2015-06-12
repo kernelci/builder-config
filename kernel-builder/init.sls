@@ -4,9 +4,9 @@ unzip:
   pkg:
     - latest
 
-ia32-libs:
-  pkg:
-    - latest
+add_i386_architecture:
+  cmd.run:
+    - name: dpkg --add-architecture i386
 
 build-essential:
   pkg:
@@ -44,16 +44,21 @@ bc:
   pkg:
     - latest
 
+git-core:
+  pkg:
+    - latest
+
+htop:
+  pkg:
+    - latest
+
 python-software-properties:
   pkg:
     - latest
 
-toolchain:
-  pkgrepo.managed:
-    - ppa: linaro-maintainers/toolchain
-  pkg.latest:
-    - name: gcc-arm-linux-gnueabi
-    - refresh: True
+gcc-arm-linux-gnueabi:
+  pkg:
+    - latest
 
 gcc-linaro-aarch64-linux-gnu:
   archive:
@@ -64,11 +69,3 @@ gcc-linaro-aarch64-linux-gnu:
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/aarch64-linux-gnu/
-
-git-core:
-  pkg:
-    - latest
-
-htop:
-  pkg:
-    - latest
