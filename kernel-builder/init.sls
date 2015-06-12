@@ -8,6 +8,18 @@ add_i386_architecture:
   cmd.run:
     - name: dpkg --add-architecture i386
 
+python-software-properties:
+  pkg:
+    - latest
+
+software-properties-common:
+  pkg:
+    - latest
+
+add_linaro_toolchain_ppa:
+  cmd.run:
+    - name: add-apt-repository -y ppa:linaro-maintainers/toolchain && apt-get update
+
 libstdc++6:i386:
  pkg:
    - latest
@@ -68,16 +80,9 @@ htop:
   pkg:
     - latest
 
-python-software-properties:
+gcc-arm-linux-gnueabi:
   pkg:
     - latest
-
-toolchain:
-  pkgrepo.managed:
-    - ppa: linaro-maintainers/toolchain
-  pkg.latest:
-    - name: gcc-arm-linux-gnueabi
-    - refresh: True
 
 gcc-linaro-aarch64-linux-gnu:
   archive:
