@@ -12,3 +12,4 @@ base:
     - buildslave
     - jenkins
     - mirrors
+    - android-builer
