@@ -8,6 +8,10 @@ add_i386_architecture:
   cmd.run:
     - name: dpkg --add-architecture i386
 
+libssl-dev:
+ pkg:
+   - latest
+
 libstdc++6:i386:
  pkg:
    - latest
