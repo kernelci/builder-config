@@ -8,15 +8,7 @@ git:
   pkg:
     - latest
 
-ccache:
- pkg:
-   - latest
-
 automake:
- pkg:
-   - latest
-
-lzop:
  pkg:
    - latest
 
@@ -24,15 +16,7 @@ bison:
  pkg:
    - latest
 
-build-essential:
-  pkg:
-    - latest
-
 zip:
-  pkg:
-    - latest
-
-curl:
   pkg:
     - latest
 
