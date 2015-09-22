@@ -13,3 +13,4 @@ base:
     - jenkins
     - mirrors
     - android-builder
+    - lava-ci
