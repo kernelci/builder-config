@@ -1,5 +1,13 @@
 #!/bin/bash
 # usage ./update_mirror.sh <path_to_mirror>
+
+# 
+# Cron job runs every 20 minutes.  To avoid all the slaves querying the same
+# git servers at exactly the same time, stagger the updates by sleeping for
+# a random amount of time between 0 and 15 minutes
+#
+sleep $(expr $RANDOM % 900)
+
 exec > /dev/null
 cd $1
 git remote update
