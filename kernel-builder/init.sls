@@ -76,6 +76,11 @@ gcc-arm-linux-gnueabi:
   pkg:
     - latest
 
+# needed by x86 builds
+libelfg0-dev:
+  pkg:
+    - latest
+    
 gcc-linaro-aarch64-linux-gnu:
   archive.extracted:
     - name: /usr/
