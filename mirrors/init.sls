@@ -21,17 +21,17 @@ git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git:
 # remotes
 next:
   cmd.run:
-    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags next http://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git"
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags next https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep next"
 
 arm-soc:
   cmd.run:
-    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags arm-soc http://git.kernel.org/pub/scm/linux/kernel/git/arm/arm-soc.git"
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags arm-soc https://git.kernel.org/pub/scm/linux/kernel/git/arm/arm-soc.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep arm-soc"
 
 lsk:
   cmd.run:
-    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags lsk git://git.linaro.org/kernel/linux-linaro-stable.git"
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags lsk https://git.linaro.org/kernel/linux-linaro-stable.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep lsk"
 
 rmk:
