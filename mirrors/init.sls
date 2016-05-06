@@ -36,5 +36,5 @@ lsk:
 
 rmk:
   cmd.run:
-    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags rmk git://ftp.arm.linux.org.uk/pub/linux/arm/kernel/git-cur/linux-arm.git"
+    - name: "cd /srv/mirrors/linux.git && git remote add --no-tags rmk git://git.armlinux.org.uk/~rmk/linux-arm.git"
     - unless: "cd /srv/mirrors/linux.git && git remote | grep rmk"
