@@ -77,7 +77,7 @@ gcc-arm-linux-gnueabi:
     - latest
 
 # needed by x86 builds
-libelfg0-dev:
+libelf-dev:
   pkg:
     - latest
     
