@@ -84,8 +84,17 @@ libelf-dev:
 gcc-linaro-aarch64-linux-gnu:
   archive.extracted:
     - name: /usr/
-    - source: http://releases.linaro.org/14.04/components/toolchain/binaries/gcc-linaro-aarch64-linux-gnu-4.8-2014.04_linux.tar.xz
-    - source_hash: md5=2086d92dcaccf05a454c836f01c3fc5f
+    - source: https://releases.linaro.org/components/toolchain/binaries/latest-5/aarch64-linux-gnu/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu.tar.xz
+    - source_hash: md5=4b079e59614be2c385feaec4644731d2
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/aarch64-linux-gnu/
+
+gcc-linaro-arm-linux-gnueabihf:
+  archive.extracted:
+    - name: /usr/
+    - source: https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf.tar.xz
+    - source_hash: md5=01d8860d62807b676762c9c2576dfb22
+    - tar_options: ' --strip-components=1 -J'
+    - archive_format: tar
+    - if_missing: /usr/arm-linux-gnueabihf/
