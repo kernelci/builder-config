@@ -84,8 +84,8 @@ libelf-dev:
 gcc-linaro-aarch64-linux-gnu:
   archive.extracted:
     - name: /usr/
-    - source: https://releases.linaro.org/components/toolchain/binaries/latest-5/aarch64-linux-gnu/gcc-linaro-5.3-2016.02-x86_64_aarch64-linux-gnu.tar.xz
-    - source_hash: md5=4b079e59614be2c385feaec4644731d2
+    - source: http://releases.linaro.org/components/toolchain/binaries/5.2-2015.11-2/aarch64-linux-gnu/gcc-linaro-5.2-2015.11-2-x86_64_aarch64-linux-gnu.tar.xz
+    - source_hash: md5=7d2a8af2f14f0d10831562f18335bf89
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/aarch64-linux-gnu/
