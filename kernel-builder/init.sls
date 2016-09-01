@@ -84,8 +84,8 @@ libelf-dev:
 gcc-linaro-aarch64-linux-gnu:
   archive.extracted:
     - name: /usr/
-    - source: http://releases.linaro.org/components/toolchain/binaries/5.2-2015.11-2/aarch64-linux-gnu/gcc-linaro-5.2-2015.11-2-x86_64_aarch64-linux-gnu.tar.xz
-    - source_hash: md5=7d2a8af2f14f0d10831562f18335bf89
+    - source: https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/aarch64-linux-gnu/gcc-linaro-5.3.1-2016.05-x86_64_aarch64-linux-gnu.tar.xz
+    - source_hash: md5=24ac2e26f50f49f3043f281440b41bba
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/aarch64-linux-gnu/
@@ -93,8 +93,8 @@ gcc-linaro-aarch64-linux-gnu:
 gcc-linaro-arm-linux-gnueabihf:
   archive.extracted:
     - name: /usr/
-    - source: https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/gcc-linaro-5.3-2016.02-x86_64_arm-linux-gnueabihf.tar.xz
-    - source_hash: md5=01d8860d62807b676762c9c2576dfb22
+    - source: https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+    - source_hash: md5=gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/arm-linux-gnueabihf/
