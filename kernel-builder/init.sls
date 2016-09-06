@@ -94,7 +94,7 @@ gcc-linaro-arm-linux-gnueabihf:
   archive.extracted:
     - name: /usr/
     - source: https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
-    - source_hash: md5=gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+    - source_hash: md5=9815a2f56fea6f1ff14905ab5997326a
     - tar_options: ' --strip-components=1 -J'
     - archive_format: tar
     - if_missing: /usr/arm-linux-gnueabihf/
