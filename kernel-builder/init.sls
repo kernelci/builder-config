@@ -106,5 +106,5 @@ mips-mti-linux-gnu:
     - source_hash: md5=147fdf1db4f0cab776d645afd6d11df7
     - tar_options: ' --strip-components=2 -a'
     - archive_format: tar
-    - if_missing: /usr/mips-mti-linux-gnu/
+    - if_missing: /usr/mips-img-linux-gnu/
 
