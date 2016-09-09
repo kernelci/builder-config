@@ -99,12 +99,12 @@ gcc-linaro-arm-linux-gnueabihf:
     - archive_format: tar
     - if_missing: /usr/arm-linux-gnueabihf/
 
-mips-mti-linux-gnu:
+mips-linux-gnu:
   archive.extracted:
     - name: /usr/
-    - source: http://codescape-mips-sdk.imgtec.com/components/toolchain/2016.05-03/Codescape.GNU.Tools.Package.2016.05-03.for.MIPS.IMG.Linux.CentOS-5.x86_64.tar.gz
-    - source_hash: md5=147fdf1db4f0cab776d645afd6d11df7
-    - tar_options: ' --strip-components=2 -a'
+    - source: https://sourcery.mentor.com/GNUToolchain/package14486/public/mips-linux-gnu/mips-2016.05-8-mips-linux-gnu-i686-pc-linux-gnu.tar.bz2
+    - source_hash: md5=ba4b96ecaa009d3bd8f1103effcde4c2
+    - tar_options: ' --strip-components=1 -a'
     - archive_format: tar
-    - if_missing: /usr/mips-img-linux-gnu/
+    - if_missing: /usr/mips-linux-gnu/
 
