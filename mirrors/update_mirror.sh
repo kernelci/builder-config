@@ -11,10 +11,12 @@ sleep $(expr $RANDOM % 900)
 exec > /dev/null
 cd $1
 git remote update
+git remote prune origin
 git remote prune next
 git remote prune arm-soc
 git remote prune lsk
 git remote prune rmk
+git gc
 
 # Hack for broken Jenkins git plugin which sometimes expects to see a
 # '.git' dir, which doesn't exist in a bare repo
