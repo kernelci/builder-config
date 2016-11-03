@@ -72,6 +72,14 @@ htop:
   pkg:
     - latest
 
+gcc-5:
+  pkg:
+    - latest
+
+gcc-5-plugin-dev
+  pkg:
+    - latest
+
 gcc-arm-linux-gnueabi:
   pkg:
     - latest
