@@ -89,6 +89,11 @@ libelf-dev:
   pkg:
     - latest
     
+# needed for mkimage: some kernel builds try to create u-boot images
+u-boot-tools:
+  pkg:
+    - latest
+
 gcc-linaro-aarch64-linux-gnu:
   archive.extracted:
     - name: /usr/
