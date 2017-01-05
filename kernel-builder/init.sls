@@ -107,12 +107,11 @@ gcc-linaro-arm-linux-gnueabihf:
     - archive_format: tar
     - if_missing: /usr/arm-linux-gnueabihf/
 
-mips-linux-gnu:
+mips-linux:
   archive.extracted:
     - name: /usr/
-    - source: https://sourcery.mentor.com/GNUToolchain/package14486/public/mips-linux-gnu/mips-2016.05-8-mips-linux-gnu-i686-pc-linux-gnu.tar.bz2
-    - source_hash: md5=ba4b96ecaa009d3bd8f1103effcde4c2
+    - source: http://storage.kernelci.org/images/toolchain/gcc-6.3.0-mips-linux.tar.bz2
+    - source_hash: md5=f8b05e98fce2dacc8479974d2d6c2b04
     - tar_options: ' --strip-components=1 -a'
     - archive_format: tar
-    - if_missing: /usr/mips-linux-gnu/
-
+    - if_missing: /usr/mips-linux/
