@@ -10,6 +10,7 @@ sleep $(expr $RANDOM % 900)
 
 exec > /dev/null
 cd $1
+git prune
 git remote update
 git remote prune origin
 git remote prune next
